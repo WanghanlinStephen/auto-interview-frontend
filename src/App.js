@@ -12,6 +12,8 @@ import CustomNavbar from './components/CustomNavbar';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Profile from './components/Profile';
+import Vip from './components/Vip'
+import PaymentMethod from './components/PaymentMethod';
 
 const createAppTheme = (mode) =>
   createTheme({
@@ -134,6 +136,8 @@ function App() {
             <Route path="/signin" element={<SignIn translations={translations[language]} setIsAuthenticated={setIsAuthenticated}/>} />
             <Route path="/signup" element={<SignUp translations={translations[language]} setIsAuthenticated={setIsAuthenticated}/>} />
             <Route path="/profile" element={<Profile translations={translations[language]} />} />
+            <Route path="/vip" element={<Vip translations={translations[language]} />} />
+            <Route path="/payment_options" element={<PaymentMethod translations={translations[language]} />} />
             <Route path="*" element={<NotFound translations={translations[language]} />} />
           </Routes>
         </Box>

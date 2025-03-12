@@ -25,10 +25,9 @@ const themeList = [
   { name: 'Flat', author: 'Mattias Erming', imageUrl: '/theme/Flat.png', value: 'flat' },
   { name: 'Kendall', author: 'M. Adam Kendall', imageUrl: '/theme/Kendall.png', value: 'kendall' },
   { name: 'Macchiato', author: 'Alessandro Biondi', imageUrl: '/theme/Macchiato.png', value: 'macchiato' },
-  { name: 'One Page Plus', author: '', imageUrl: '/theme/One Page Plus.png', value: 'onepageplus' },
   { name: 'Professional', author: 'Thomas Davis', imageUrl: '/theme/Professional.png', value: 'professional' },
-  { name: 'Relaxed', author: 'ObserverOfTime', imageUrl: '/theme/Relaxed.png', value: 'relaxed' },
   { name: 'Stack Overflow', author: '', imageUrl: '/theme/Stack Overflow.png', value: 'stackoverflow' },
+  { name: 'Engineering', author: '', imageUrl: '/theme/Engineering.png', value: 'engineering'}
 ];
 
 const ResumeEditor = ({ translations }) => {

@@ -32,6 +32,11 @@ const CustomNavbar = ({ language, toggleLanguage, translations, isAuthenticated,
     handleMenuClose();
   };
 
+  const handleVIP = () => {
+    navigate('/vip'); // ✅ 跳转到VIP充值页面
+    handleMenuClose();
+  }
+
   const handleLogout = () => {
     localStorage.removeItem('token'); // ✅ 清除 Token
     localStorage.removeItem('username'); // ✅ 清除用户名
@@ -74,6 +79,7 @@ const CustomNavbar = ({ language, toggleLanguage, translations, isAuthenticated,
                 sx={{ mt: 1 }}
               >
                 <MenuItem onClick={handleProfileClick}>修改个人信息</MenuItem>
+                <MenuItem onClick={handleVIP}>充值VIP</MenuItem>
                 <MenuItem onClick={handleLogout}>退出登录</MenuItem>
               </Menu>
             </Box>
